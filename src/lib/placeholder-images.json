@@ -23,6 +23,24 @@
       "description": "An image representing a random password generator",
       "imageUrl": "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2VjdXJpdHklMjBjb2RlfGVufDB8fHx8MTc2ODIwOTIxNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "security code"
+    },
+    {
+      "id": "project-4",
+      "description": "An image representing an online chat application",
+      "imageUrl": "https://images.unsplash.com/photo-1684132925971-31c258718bd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGF0JTIwYXBwbGljYXRpb258ZW58MHx8fHwxNzY4MTA1MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chat application"
+    },
+    {
+      "id": "project-5",
+      "description": "An image representing a custom language compiler",
+      "imageUrl": "https://images.unsplash.com/photo-1656259698958-7bcb4e72acc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21waWxlciUyMGNvZGV8ZW58MHx8fHwxNzY4MjA5MzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "compiler code"
+    },
+    {
+      "id": "project-6",
+      "description": "An image representing Zomato data analysis",
+      "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwYW5hbHlzaXN8ZW58MHx8fHwxNzY4MTEzNTAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data analysis"
     }
   ]
 }

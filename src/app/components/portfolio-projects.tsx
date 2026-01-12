@@ -25,6 +25,24 @@ const projects = [
     description: 'Generates secure passwords with customizable length and character options using ReactJS.',
     tags: ['ReactJS', 'JavaScript', 'HTML5', 'CSS3'],
   },
+  {
+    id: 'project-4',
+    title: 'Online Chat Application',
+    description: 'Real-time chat app using Java Swing, Socket programming, and Spring Boot backend integration.',
+    tags: ['Java', 'Swing', 'Spring Boot', 'Socket'],
+  },
+  {
+    id: 'project-5',
+    title: 'Custom Language Compiler',
+    description: 'Developed a custom compiler using Lex and AST to parse and execute a custom programming language.',
+    tags: ['C++', 'Lex', 'AST'],
+  },
+  {
+    id: 'project-6',
+    title: 'Advanced Zomato Clustering and Sentiment Analysis',
+    description: 'This project analyzes Zomato restaurant data from various cities in India to extract valuable insights about the Indian food industry.',
+    tags: ['NLP', 'PCA', 'Machine Learning', 'Sentiment Analysis'],
+  },
 ];
 
 export function PortfolioProjects() {
