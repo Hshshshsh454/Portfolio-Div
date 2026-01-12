@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: 'project-3',
-    title: 'Random Password Generator',
+    title: 'Engineering Edge Services',
     description: 'Generates secure passwords with customizable length and character options using ReactJS.',
     tags: ['ReactJS', 'JavaScript', 'HTML5', 'CSS3'],
     link: '#'
