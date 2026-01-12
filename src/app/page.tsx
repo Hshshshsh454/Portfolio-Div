@@ -13,8 +13,8 @@ export default function Home() {
       <main className="flex-1">
         <PortfolioHero />
         <PortfolioToolkit />
+        <PortfolioAbout />
         {/* The other sections are commented out to match the image, but can be added back. */}
-        {/* <PortfolioAbout /> */}
         {/* <PortfolioProjects /> */}
       </main>
       <PortfolioFooter />
