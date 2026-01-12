@@ -12,14 +12,14 @@ const projects = [
     title: 'Expense Tracker',
     description: 'Desktop application to track personal expenses with SQL database integration and JavaFX GUI.',
     tags: ['Java', 'Spring Boot', 'JavaFX', 'SQL'],
-    link: 'https://github.com/Hshshshsh454/Highway-delight.git'
+    link: 'https://github.com/Hshshshsh454/Engineering-Edge.git'
   },
   {
     id: 'project-2',
     title: 'Airline Passenger Refferal Prediction',
     description: 'Predicts passenger referrals using machine learning models with data analysis and evaluation metrics.',
     tags: ['Python', 'Machine Learning', 'Data Analysis'],
-    link: 'https://github.com/Hshshshsh454/Engineering-Edge.git'
+    link: 'https://github.com/Hshshshsh454/Highway-delight.git'
   },
   {
     id: 'project-3',
