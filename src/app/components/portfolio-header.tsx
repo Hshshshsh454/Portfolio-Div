@@ -3,14 +3,12 @@ import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { ThemeToggle } from '@/app/components/theme-toggle';
-import { SidebarTrigger } from '@/components/ui/sidebar';
 
 export function PortfolioHeader() {
   return (
     <header className="sticky top-0 z-20 border-b bg-background/95 backdrop-blur-sm">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-4">
-          <SidebarTrigger />
           <Link href="/" className="flex items-center gap-2 text-xl font-bold">
             ShuklaJi <span className="text-primary">.</span>
           </Link>
