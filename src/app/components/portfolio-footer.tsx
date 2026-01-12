@@ -6,10 +6,10 @@ export function PortfolioFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary/50 py-8">
+    <footer className="border-t py-8">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 md:flex-row">
         <p className="text-sm text-muted-foreground">
-          &copy; {year} John Doe. All rights reserved.
+          &copy; {year} ShuklaJi. All rights reserved.
         </p>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" asChild>

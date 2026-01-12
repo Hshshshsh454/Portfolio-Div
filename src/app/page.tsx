@@ -6,12 +6,13 @@ import { PortfolioProjects } from '@/app/components/portfolio-projects';
 
 export default function Home() {
   return (
-    <div className="bg-background">
+    <div className="flex min-h-screen flex-col">
       <PortfolioHeader />
-      <main>
+      <main className="flex-1">
         <PortfolioHero />
-        <PortfolioAbout />
-        <PortfolioProjects />
+        {/* The other sections are commented out to match the image, but can be added back. */}
+        {/* <PortfolioAbout /> */}
+        {/* <PortfolioProjects /> */}
       </main>
       <PortfolioFooter />
     </div>

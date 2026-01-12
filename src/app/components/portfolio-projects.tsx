@@ -25,16 +25,16 @@ const projects = [
 
 export function PortfolioProjects() {
   return (
-    <section id="projects" className="bg-background py-16 md:py-24">
+    <section id="projects" className="bg-secondary/50 py-24 sm:py-32">
       <div className="container mx-auto">
-        <h2 className="mb-12 text-center font-headline text-3xl font-bold md:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           My Projects
         </h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => {
             const projectImage = PlaceHolderImages.find((img) => img.id === project.id);
             return (
-              <Card key={project.id} className="flex flex-col overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+              <Card key={project.id} className="flex flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-2">
                 {projectImage && (
                   <div className="relative h-48 w-full">
                     <Image
@@ -47,7 +47,7 @@ export function PortfolioProjects() {
                   </div>
                 )}
                 <CardHeader>
-                  <CardTitle className="font-headline">{project.title}</CardTitle>
+                  <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow" />
@@ -55,7 +55,7 @@ export function PortfolioProjects() {
                   <Button variant="ghost" asChild>
                     <Link href="#">Live Demo <ExternalLink className="ml-2 h-4 w-4" /></Link>
                   </Button>
-                  <Button asChild>
+                  <Button asChild className="bg-green-500 text-white hover:bg-green-600">
                     <Link href="#">Source Code</Link>
                   </Button>
                 </CardFooter>
