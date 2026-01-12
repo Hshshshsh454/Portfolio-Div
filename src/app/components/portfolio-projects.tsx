@@ -9,14 +9,14 @@ import { Github } from 'lucide-react';
 const projects = [
   {
     id: 'project-1',
-    title: 'Expense Tracker',
+    title: 'Youtube Clone',
     description: 'Desktop application to track personal expenses with SQL database integration and JavaFX GUI.',
     tags: ['Java', 'Spring Boot', 'JavaFX', 'SQL'],
-    link: 'https://github.com/Hshshshsh454/Engineering-Edge.git'
+    link: 'https://github.com/Hshshshsh454/Youtube-Clone.git'
   },
   {
     id: 'project-2',
-    title: 'Airline Passenger Refferal Prediction',
+    title: 'Highway Delight Travel',
     description: 'Predicts passenger referrals using machine learning models with data analysis and evaluation metrics.',
     tags: ['Python', 'Machine Learning', 'Data Analysis'],
     link: 'https://github.com/Hshshshsh454/Highway-delight.git'
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     id: 'project-4',
-    title: 'Online Chat Application',
+    title: 'TechTrek Education Platform',
     description: 'Real-time chat app using Java Swing, Socket programming, and Spring Boot backend integration.',
     tags: ['Java', 'Swing', 'Spring Boot', 'Socket'],
     link: '#'
