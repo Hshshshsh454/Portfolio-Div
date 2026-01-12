@@ -1,7 +1,8 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Moon, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { ThemeToggle } from '@/app/components/theme-toggle';
 
 export function PortfolioHeader() {
   return (
@@ -30,9 +31,7 @@ export function PortfolioHeader() {
           </Button>
         </nav>
         <div className='flex items-center gap-4'>
-            <Button variant="outline" size="icon">
-                <Moon className="h-5 w-5" />
-            </Button>
+            <ThemeToggle />
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden">
