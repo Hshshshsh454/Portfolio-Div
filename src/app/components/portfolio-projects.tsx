@@ -12,36 +12,42 @@ const projects = [
     title: 'Expense Tracker',
     description: 'Desktop application to track personal expenses with SQL database integration and JavaFX GUI.',
     tags: ['Java', 'Spring Boot', 'JavaFX', 'SQL'],
+    link: 'https://github.com/Hshshshsh454/Highway-delight.git'
   },
   {
     id: 'project-2',
     title: 'Airline Passenger Refferal Prediction',
     description: 'Predicts passenger referrals using machine learning models with data analysis and evaluation metrics.',
     tags: ['Python', 'Machine Learning', 'Data Analysis'],
+    link: 'https://github.com/Hshshshsh454/Engineering-Edge.git'
   },
   {
     id: 'project-3',
     title: 'Random Password Generator',
     description: 'Generates secure passwords with customizable length and character options using ReactJS.',
     tags: ['ReactJS', 'JavaScript', 'HTML5', 'CSS3'],
+    link: '#'
   },
   {
     id: 'project-4',
     title: 'Online Chat Application',
     description: 'Real-time chat app using Java Swing, Socket programming, and Spring Boot backend integration.',
     tags: ['Java', 'Swing', 'Spring Boot', 'Socket'],
+    link: '#'
   },
   {
     id: 'project-5',
     title: 'Custom Language Compiler',
     description: 'Developed a custom compiler using Lex and AST to parse and execute a custom programming language.',
     tags: ['C++', 'Lex', 'AST'],
+    link: '#'
   },
   {
     id: 'project-6',
     title: 'Advanced Zomato Clustering and Sentiment Analysis',
     description: 'This project analyzes Zomato restaurant data from various cities in India to extract valuable insights about the Indian food industry.',
     tags: ['NLP', 'PCA', 'Machine Learning', 'Sentiment Analysis'],
+    link: '#'
   },
 ];
 
@@ -84,7 +90,7 @@ export function PortfolioProjects() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="bg-green-500 text-white hover:bg-green-600 w-full">
-                    <Link href="#"><Github className="mr-2 h-4 w-4" /> Code</Link>
+                    <Link href={project.link}><Github className="mr-2 h-4 w-4" /> Code</Link>
                   </Button>
                 </CardFooter>
               </Card>
