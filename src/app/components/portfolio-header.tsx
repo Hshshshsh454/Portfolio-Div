@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Moon } from 'lucide-react';
+import { Moon, Menu } from 'lucide-react';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 export function PortfolioHeader() {
   return (
@@ -32,6 +33,26 @@ export function PortfolioHeader() {
             <Button variant="outline" size="icon">
                 <Moon className="h-5 w-5" />
             </Button>
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="outline" size="icon" className="md:hidden">
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Toggle navigation menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left">
+                <div className="grid gap-4 py-6">
+                  <Link href="/" className="flex items-center gap-2 text-xl font-bold">
+                    ShuklaJi <span className="text-primary">.</span>
+                  </Link>
+                  <Link href="#showcase" className="text-lg font-medium">Showcase</Link>
+                  <Link href="#about" className="text-lg font-medium">About</Link>
+                  <Link href="#skills" className="text-lg font-medium">Skills</Link>
+                  <Link href="#projects" className="text-lg font-medium">Projects</Link>
+                  <Link href="#contact" className="text-lg font-medium">Contact</Link>
+                </div>
+              </SheetContent>
+            </Sheet>
         </div>
       </div>
     </header>
