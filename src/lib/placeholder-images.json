@@ -41,6 +41,12 @@
       "description": "An image representing Zomato data analysis",
       "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwYW5hbHlzaXN8ZW58MHx8fHwxNzY4MTEzNTAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data analysis"
+    },
+    {
+      "id": "hero-coder",
+      "description": "An image of code on a screen",
+      "imageUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2RlcnxlbnwwfHx8fDE3NjgxNDIxODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coder developer"
     }
   ]
 }

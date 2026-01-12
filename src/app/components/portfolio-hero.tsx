@@ -1,7 +1,9 @@
 import { Button } from '@/components/ui/button';
-import { Code } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
 
 export function PortfolioHero() {
+  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-coder');
   return (
     <section id="showcase" className="relative w-full py-24 text-center md:py-32 lg:py-40">
       <div className="container mx-auto">
@@ -22,20 +24,18 @@ export function PortfolioHero() {
           </div>
         </div>
 
-        <div className="relative mx-auto mt-16 max-w-2xl">
-          <div className="rounded-xl border bg-card shadow-lg">
-            <div className="flex h-10 items-center gap-2 border-b px-4">
-              <div className="h-3 w-3 rounded-full bg-red-500"></div>
-              <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
-              <div className="h-3 w-3 rounded-full bg-green-500"></div>
+        <div className="relative mx-auto mt-16 max-w-4xl">
+          {heroImage && (
+            <div className="relative h-64 w-full rounded-xl border bg-card shadow-lg md:h-96">
+                <Image
+                    src={heroImage.imageUrl}
+                    alt={heroImage.description}
+                    fill
+                    className="rounded-xl object-cover"
+                    data-ai-hint={heroImage.imageHint}
+                />
             </div>
-            <div className="p-4">
-              <div className="flex items-center gap-2 font-mono text-sm text-muted-foreground">
-                <span className="text-green-400">$</span>
-                <p>https://leetcode.com/u/SiddharthShukla34/</p>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </section>
