@@ -11,7 +11,7 @@ export function PortfolioFooter() {
       <div className="container mx-auto flex flex-col items-center justify-between gap-6 sm:flex-row">
         <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-                ShuklaJi <span className="text-green-500">.</span>
+                Divyansh <span className="text-green-500">.</span>
             </Link>
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-2 text-center text-sm md:flex-nowrap md:gap-4">
@@ -51,7 +51,7 @@ export function PortfolioFooter() {
       </div>
       <div className="mt-6 border-t pt-6 text-center">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} ShuklaJi Portfolio. All rights reserved.
+          &copy; {new Date().getFullYear()} Divyansh Portfolio. All rights reserved.
         </p>
       </div>
     </footer>

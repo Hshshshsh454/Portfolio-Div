@@ -10,7 +10,7 @@ export function PortfolioHeader() {
       <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-            ShuklaJi <span className="text-primary">.</span>
+            Divyansh <span className="text-primary">.</span>
           </Link>
         </div>
         <nav className="hidden items-center gap-2 md:flex">
@@ -42,7 +42,7 @@ export function PortfolioHeader() {
               <SheetContent side="left">
                 <div className="grid gap-4 py-6">
                   <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-                    ShuklaJi <span className="text-primary">.</span>
+                    Divyansh <span className="text-primary">.</span>
                   </Link>
                   <Link href="#showcase" className="text-lg font-medium">Showcase</Link>
                   <Link href="#about" className="text-lg font-medium">About</Link>
