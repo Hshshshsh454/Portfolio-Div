@@ -3,38 +3,47 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
-import { ExternalLink } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
+import { Github } from 'lucide-react';
 
 const projects = [
   {
     id: 'project-1',
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce website with a modern design, product management, and a secure checkout process.',
+    title: 'Expense Tracker',
+    description: 'Desktop application to track personal expenses with SQL database integration and JavaFX GUI.',
+    tags: ['Java', 'Spring Boot', 'JavaFX', 'SQL'],
   },
   {
     id: 'project-2',
-    title: 'Task Management App',
-    description: 'A responsive task management application to help users organize their work and improve productivity.',
+    title: 'Airline Passenger Refferal Prediction',
+    description: 'Predicts passenger referrals using machine learning models with data analysis and evaluation metrics.',
+    tags: ['Python', 'Machine Learning', 'Data Analysis'],
   },
   {
     id: 'project-3',
-    title: 'Personal Portfolio Website',
-    description: 'A sleek and personal portfolio to showcase projects and skills, built with Next.js and Tailwind CSS.',
+    title: 'Random Password Generator',
+    description: 'Generates secure passwords with customizable length and character options using ReactJS.',
+    tags: ['ReactJS', 'JavaScript', 'HTML5', 'CSS3'],
   },
 ];
 
 export function PortfolioProjects() {
   return (
-    <section id="projects" className="bg-secondary/50 py-24 sm:py-32">
+    <section id="projects" className="py-24 sm:py-32">
       <div className="container mx-auto">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          My Projects
-        </h2>
+        <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              Featured Projects
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+                Check out some of my recent work
+            </p>
+        </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => {
             const projectImage = PlaceHolderImages.find((img) => img.id === project.id);
             return (
-              <Card key={project.id} className="flex flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+              <Card key={project.id} className="flex flex-col overflow-hidden">
                 {projectImage && (
                   <div className="relative h-48 w-full">
                     <Image
@@ -48,15 +57,16 @@ export function PortfolioProjects() {
                 )}
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
-                <CardContent className="flex-grow" />
-                <CardFooter className="flex justify-end gap-2">
-                  <Button variant="ghost" asChild>
-                    <Link href="#">Live Demo <ExternalLink className="ml-2 h-4 w-4" /></Link>
-                  </Button>
-                  <Button asChild className="bg-green-500 text-white hover:bg-green-600">
-                    <Link href="#">Source Code</Link>
+                <CardContent className="flex-grow space-y-4">
+                    <CardDescription>{project.description}</CardDescription>
+                    <div className="flex flex-wrap gap-2">
+                        {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
+                    </div>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild className="bg-green-500 text-white hover:bg-green-600 w-full">
+                    <Link href="#"><Github className="mr-2 h-4 w-4" /> Code</Link>
                   </Button>
                 </CardFooter>
               </Card>

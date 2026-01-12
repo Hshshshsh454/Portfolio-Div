@@ -42,7 +42,7 @@ const skills = [
     level: 85,
     icon: (
         <svg className="h-10 w-10 text-orange-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.2 10.51_a_1.3 1.3 0 0_0_-1.11-.64h-3.37a1.3 1.3 0 0_0-1.11.64l-2.73 4.54a.65.65 0 0_1_-1.1 0L9.84 9.87a.65.65 0 0_0_-.55-.29.65.65 0 0_0_-.55.29L6.5 13.06H3.81a1.3 1.3 0 1_0_0 2.6h3.24a.65.65 0 0_0_.55-.29.65.65 0 0_0_.55-.29l2.24-3.19 2.94 4.88a.65.65 0 0_0_1.1 0l2.73-4.54h2.53a1.3 1.3 0 1_0_0-2.6Z" fill="currentColor"></path>
+            <path d="M22.2 10.51a1.3 1.3 0 0 0-1.11-.64h-3.37a1.3 1.3 0 0 0-1.11.64l-2.73 4.54a.65.65 0 0 1-1.1 0L9.84 9.87a.65.65 0 0 0-.55-.29.65.65 0 0 0-.55.29L6.5 13.06H3.81a1.3 1.3 0 1 0 0 2.6h3.24a.65.65 0 0 0 .55-.29.65.65 0 0 0 .55-.29l2.24-3.19 2.94 4.88a.65.65 0 0 0 1.1 0l2.73-4.54h2.53a1.3 1.3 0 1 0 0-2.6Z" fill="currentColor"></path>
         </svg>
     ),
     color: 'from-blue-400 to-purple-500',
@@ -57,7 +57,7 @@ const skills = [
 
 export function PortfolioSkills() {
   return (
-    <section id="skills" className="py-24 sm:py-32">
+    <section id="skills" className="py-24 sm:py-32 bg-secondary/50">
       <div className="container mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -72,7 +72,7 @@ export function PortfolioSkills() {
             <Card key={skill.name} className="flex flex-col p-6 transition-transform duration-300 hover:-translate-y-2">
               <CardHeader className="flex flex-row items-center justify-between pb-4">
                 <h3 className="text-xl font-bold">{skill.name}</h3>
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-secondary">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-background">
                   {skill.icon}
                 </div>
               </CardHeader>

@@ -16,8 +16,7 @@ export default function Home() {
         <PortfolioToolkit />
         <PortfolioAbout />
         <PortfolioSkills />
-        {/* The other sections are commented out to match the image, but can be added back. */}
-        {/* <PortfolioProjects /> */}
+        <PortfolioProjects />
       </main>
       <PortfolioFooter />
     </div>
