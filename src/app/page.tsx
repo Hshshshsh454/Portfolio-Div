@@ -1,5 +1,6 @@
 
 import { PortfolioAbout } from '@/app/components/portfolio-about';
+import { PortfolioContact } from '@/app/components/portfolio-contact';
 import { PortfolioFooter } from '@/app/components/portfolio-footer';
 import { PortfolioHeader } from '@/app/components/portfolio-header';
 import { PortfolioHero } from '@/app/components/portfolio-hero';
@@ -17,6 +18,7 @@ export default function Home() {
         <PortfolioAbout />
         <PortfolioSkills />
         <PortfolioProjects />
+        <PortfolioContact />
       </main>
       <PortfolioFooter />
     </div>
