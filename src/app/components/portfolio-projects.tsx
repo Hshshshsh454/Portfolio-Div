@@ -35,20 +35,40 @@ const projects = [
     tags: ['Java', 'Swing', 'Spring Boot', 'Socket'],
     link: '#'
   },
-  {
-    id: 'project-5',
-    title: 'Custom Language Compiler',
-    description: 'Developed a custom compiler using Lex and AST to parse and execute a custom programming language.',
-    tags: ['C++', 'Lex', 'AST'],
-    link: '#'
-  },
-  {
-    id: 'project-6',
-    title: 'Advanced Zomato Clustering and Sentiment Analysis',
-    description: 'This project analyzes Zomato restaurant data from various cities in India to extract valuable insights about the Indian food industry.',
-    tags: ['NLP', 'PCA', 'Machine Learning', 'Sentiment Analysis'],
-    link: '#'
-  },
+ ```javascript
+{
+  id: 'project-5',
+  title: 'Digital Banking App',
+  description:
+    'Developed a digital banking application with secure account management, internal money transfers, external payments via Razorpay, and real-time fraud detection. Implemented event-driven transaction processing using Kafka, Redis, and the Saga pattern.',
+  tags: [
+    'Java',
+    'Spring Boot',
+    'Apache Kafka',
+    'Redis',
+    'Razorpay',
+    'Fraud Detection',
+    'Microservices'
+  ],
+  link: '#'
+},
+{
+  id: 'project-6',
+  title: 'Advanced Zomato Clustering and Sentiment Analysis',
+  description:
+    'Analyzed Zomato restaurant datasets from multiple Indian cities to identify restaurant segments, evaluate customer sentiment from reviews, and uncover food industry trends using machine learning, NLP, clustering, and dimensionality reduction techniques.',
+  tags: [
+    'Python',
+    'Machine Learning',
+    'NLP',
+    'K-Means Clustering',
+    'PCA',
+    'Sentiment Analysis',
+    'Data Visualization'
+  ],
+  link: '#'
+},
+```
 ];
 
 export function PortfolioProjects() {
